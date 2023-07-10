@@ -1,0 +1,19 @@
+.header-home {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.header-home button {
+  background-color: rgb(12, 117, 255);
+  color: white;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.content-data {
+  border: solid blue 2px;
+}
