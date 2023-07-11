@@ -43,9 +43,11 @@
           </div>
         </div>
 
-        <form action="commentservlet" method="POST">
+        <form action="saveComment.jsp" method="POST">
+          <input class="hide-input" name="calificacion" value="4" />
+          <input class="hide-input" name="id_product" value="<%= idProduct%>" />
           <div class="product-calification">
-            <p>Califica este product NO QUIERo</p>
+            <p>Califica este product</p>
             <div class="product-starts">
               <p>Estrellas</p>
               <p>Excelente</p>
@@ -75,29 +77,19 @@
         </form>
       </div>
 
-
       <div class="space-comments">
         <h2>Comments</h2>
-
         <%
           List<Comment> comments = commentsDAO.getAllCommentsByIdProduct(idProduct);
-
-
           for (Comment comment : comments) {
            %>
-
         <div class="row-comentario">
           <p><%= comment.getTitulo() %></p>
           <p><%= comment.getComentario() %></p>
         </div>
         <%
-
           }
-
         %>
-
-
-
 
       </div>
     </div>

@@ -115,3 +115,7 @@
 .row-comentario{
     margin: 30px 0px;
 }
+
+.hide-input{
+  display: none;
+}
