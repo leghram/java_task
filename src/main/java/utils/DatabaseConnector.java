@@ -1,9 +1,11 @@
+package utils;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnector {
-    private static final String URL = "jdbc:mysql://mysql:3306/java?useSSL=false";
+    private static final String URL = "jdbc:mysql://localhost:3306/java?useSSL=false";
     private static final String USERNAME = "myuser";
     private static final String PASSWORD = "mypassword";
 

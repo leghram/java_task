@@ -9,3 +9,7 @@
   width: 50%;
   margin: 40px auto;
 }
+
+button {
+  cursor: pointer;
+}
